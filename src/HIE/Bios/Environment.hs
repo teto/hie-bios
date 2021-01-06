@@ -49,7 +49,7 @@ initSession  ComponentOptions {..} = do
 
     let targets' = makeTargetsAbsolute componentRoot targets
     -- Unset the default log action to avoid output going to stdout.
-    unsetLogAction
+    -- unsetLogAction
     return targets'
 
 ----------------------------------------------------------------
