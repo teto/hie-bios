@@ -18,7 +18,7 @@ data CradleOpts = CradleOpts
                 }
 
 defaultCradleOpts :: CradleOpts
-defaultCradleOpts = CradleOpts Silent Nothing
+defaultCradleOpts = CradleOpts Verbose Nothing
 
 ----------------------------------------------------------------
 

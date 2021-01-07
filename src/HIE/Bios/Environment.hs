@@ -43,7 +43,8 @@ initSession  ComponentOptions {..} = do
         (disableOptimisation -- Compile with -O0 as we are not going to produce object files.
         $ setIgnoreInterfacePragmas            -- Ignore any non-essential information in interface files such as unfoldings changing.
         $ writeInterfaceFiles (Just cache_dir) -- Write interface files to the cache
-        $ setVerbosity 0                       -- Set verbosity to zero just in case the user specified `-vx` in the options.
+        -- TODO try to override verbosity
+        $ setVerbosity 2                       -- Set verbosity to zero just in case the user specified `-vx` in the options.
         $ setLinkerOptions df''                 -- Set `-fno-code` to avoid generating object files, unless we have to.
         )
 
