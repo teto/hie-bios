@@ -7,6 +7,7 @@ mkShell {
 
     haskell.packages.ghc884.ghc
     haskell.packages.ghc884.cabal-install
+    haskell.packages.ghc884.haskell-language-server
     zlib.dev
     zlib
   ];
